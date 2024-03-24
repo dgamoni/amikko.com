@@ -1,0 +1,31 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+
+/* campo de pesquisa */
+.form-flat input:not([type="submit"]) {
+	background-color: white;
+}
+
+/* footer */
+.widget>ul>li>a {
+padding: 0!important;
+}
+ul.menu>li>a {
+    padding: 0;
+}
+.is-divider {
+    height: 0px;
+}
+
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}
