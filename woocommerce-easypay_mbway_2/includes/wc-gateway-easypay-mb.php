@@ -377,7 +377,7 @@ class WC_Gateway_Easypay_MB extends WC_Payment_Gateway
         $order = new WC_Order($order_id);
 
         if ($this->expiration_enable == 'yes') {
-            if ($this->expiration_time >= 1 && $this->expiration_time <= 93) {
+            if ($this->expiration_time >= 1 || $this->expiration_time <= 93) {
                 $max_date = Date('Y-m-d h:m', strtotime("+" . $this->expiration_time . " days"));
             }
         }
@@ -508,8 +508,7 @@ class WC_Gateway_Easypay_MB extends WC_Payment_Gateway
 
         return [
             'result'   => 'success',
-            //'redirect' => $order->get_checkout_payment_url(true)
-            'redirect' => $order->get_checkout_order_received_url(true) // dgamoni fix
+            'redirect' => $order->get_checkout_payment_url(true)
         ];
     }
 

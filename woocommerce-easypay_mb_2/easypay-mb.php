@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin Name: WooCommerce Easypay Gateway MultiBanco
+ * Plugin Name: WooCommerce Easypay Gateway MultiBanco fix 2.00
  * Description: Easypay Payment Gateway for WooCommerce - Don't leave for tomorrow what you can receive today
- * Version: 2.00
+ * Version: 9992.00
  * Author: Easypay
  * Author URI: https://easypay.pt
  * Requires at least: 3.6
